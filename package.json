@@ -1,6 +1,6 @@
 {
   "name": "storybook-class-stories",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ECMAScript / TypeScript decorator for class-style Storybook stories",
   "main": "src/index.ts",
   "module": "src/index.ts",

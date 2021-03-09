@@ -7,10 +7,8 @@ export default function Template(options: TemplateOptions = {}) {
     const prop = options.template
     delete options.template
     Object.assign(prop, options)
-    const item = Object.defineProperty(target, name, {
+    Object.defineProperty(target, name, {
       value: prop
     })
-    const descriptor = Object.getOwnPropertyDescriptor(item, name)
-    return descriptor
   }
 }

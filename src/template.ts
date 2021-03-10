@@ -3,11 +3,11 @@ export interface TemplateOptions {
 }
 
 export default function Template(options: TemplateOptions = {}) {
-  return function (target: any, name?: string) {
+  return function (target: any, key: PropertyKey) {
     const prop = options.template
     delete options.template
     Object.assign(prop, options)
-    Object.defineProperty(target, name, {
+    Object.defineProperty(target, key, {
       value: prop
     })
   }

@@ -1,16 +1,16 @@
 {
   "name": "storybook-class-stories",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "description": "ECMAScript / TypeScript decorator for class-style Storybook stories",
-  "main": "dist/storybook-class-stories.js",
-  "module": "src/index.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "dev": "webpack --config webpack.config.js --watch --mode=development",
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "prepublish": "webpack --config webpack.config.js"
+    "prepublish": "tsc"
   },
   "keywords": [
     "storybook",
@@ -37,5 +37,5 @@
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {},
-  "types": "dist/src/index.d.ts"
+  "types": "dist/index.d.ts"
 }

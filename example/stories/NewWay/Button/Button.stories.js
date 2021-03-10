@@ -1,5 +1,5 @@
 import { createButton } from './Button'
-import { Story, Template as StoryTemplate } from '../../../../dist/storybook-class-stories'
+import { Story, Template as StoryTemplate } from '../../../../dist'
 
 const Template = ({ label, ...args }) => {
   return createButton({ label, ...args })

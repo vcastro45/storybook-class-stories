@@ -1,9 +1,14 @@
 {
   "name": "storybook-class-stories",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "ECMAScript / TypeScript decorator for class-style Storybook stories",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vcastro45/storybook-class-stories"
+  },
+  "homepage": "https://github.com/vcastro45/storybook-class-stories#readme",
   "scripts": {
     "dev": "webpack --config webpack.config.js --watch --mode=development",
     "build": "webpack --config webpack.config.js",

@@ -9,7 +9,8 @@
     "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepublish": "webpack --config webpack.config.js"
   },
   "keywords": [
     "storybook",
@@ -31,11 +32,10 @@
     "babel-loader": "^8.2.2",
     "babel-plugin-add-module-exports": "^1.0.4",
     "ts-loader": "^8.0.17",
-    "typescript": "^4.2.2",
+    "typescript": "^4.2.3",
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0"
   },
   "dependencies": {},
-  "types": "dist/src/index.d.ts",
-  "prepublish": "webpack --config webpack.config.js"
+  "types": "dist/src/index.d.ts"
 }

@@ -2,10 +2,19 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
-    "module": "es6",
-    "target": "es5",
+    "module": "esnext",
+    "target": "esnext",
     "allowJs": true,
     "experimentalDecorators": true,
-    "declaration": true
-  }
+    "declaration": true,
+    "types": []
+  },
+  "include": [
+    "src/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*"
+  ]
 }

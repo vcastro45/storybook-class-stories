@@ -7,7 +7,8 @@
     "allowJs": true,
     "experimentalDecorators": true,
     "declaration": true,
-    "types": []
+    "types": [],
+    "moduleResolution": "Node"
   },
   "include": [
     "src/*"

@@ -1,12 +1,10 @@
 import { createButton } from './Button'
-import { Story, Template as StoryTemplate } from '../../../../dist'
-
-const Template = ({ label, ...args }) => {
-  return createButton({ label, ...args })
-}
+import { Story, Template } from '../../../../src'
+import ButtonFixture from './Button.fixture'
 
 @Story({
-  title: 'New way/Button Class',
+  title: 'New way/Button',
+  fixtureClass: ButtonFixture,
   argTypes: {
     label: { control: 'text' },
     primary: { control: 'boolean' },
@@ -18,8 +16,8 @@ const Template = ({ label, ...args }) => {
   }
 })
 class ButtonStory {
-  @StoryTemplate({
-    template: Template.bind({}),
+  @Template({
+    template: (data) => createButton(data),
     args: {
       primary: true,
       label: 'Button'
@@ -27,13 +25,11 @@ class ButtonStory {
   })
   Primary
 
-  @StoryTemplate({
-    template: Template.bind({}),
-    args: {
-      label: 'Button'
-    }
-  })
+  @Template((data) => createButton(data))
   Secondary
+
+  @Template((data) => createButton(data))
+  Success
 }
 
 module.exports = ButtonStory

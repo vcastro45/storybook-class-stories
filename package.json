@@ -1,6 +1,6 @@
 {
   "name": "storybook-class-stories",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "ECMAScript / TypeScript decorator for class-style Storybook stories",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -41,6 +41,8 @@
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
   "types": "dist/index.d.ts"
 }

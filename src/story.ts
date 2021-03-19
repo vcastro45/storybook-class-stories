@@ -1,8 +1,8 @@
-import { FixtureInterface, TemplateProps, TemplatePropsFactory } from './fixture'
+import { TemplateProps, TemplatePropsFactory } from './fixture'
 
 export interface StoryOptions {
   title?: string
-  fixtureClass?: { new (): FixtureInterface }
+  fixtureClass?: { new (): any }
 
   [key: string]: any
 }

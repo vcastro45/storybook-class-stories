@@ -41,8 +41,6 @@
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0"
   },
-  "dependencies": {
-    "reflect-metadata": "^0.1.13"
-  },
+  "dependencies": {},
   "types": "dist/index.d.ts"
 }
